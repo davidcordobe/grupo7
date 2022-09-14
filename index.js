@@ -29,7 +29,7 @@ app.get('/', (req, res) => {
 });
 
 
-let sql = 'SELECT * FROM foro'
+let sql = 'SELECT * FROM ipf6voifd90b45u3.foro'
 app.get('/formulario', (req, res) => {
     conexion.query(sql, (err, result) => {
         if (err) throw err;
@@ -66,7 +66,7 @@ app.post('/formulario', (req, res) => {
             mensaje: mensaje
         };
 
-        let sql = 'INSERT INTO foro SET ?';
+        let sql = 'INSERT INTO ipf6voifd90b45u3.foro SET ?';
 
         conexion.query(sql, datos, (err, result) => {
             let envioDatos = 'Datos Enviados Con Éxito'
