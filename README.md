@@ -17,8 +17,11 @@ Alvaro Seisas
 2. crear un archivo .env en la carpeta para el correcto funcionamiento de la app usando las siguientes variables:
 
 PORT= 8080
+
 USER= root
+
 PASSWORD = 'Su contraseña'
+
 DATABASE= grupo
 
 3. ejecutar la query guardada en la carpeta database en su workbench local
