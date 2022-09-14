@@ -4,8 +4,8 @@ ALUMNOS:
 
 David Arce
 
-Martin 
+Martin Maine 
 
 Jorge Nicolas Kelly
 
-Alva
+Alvaro Seisas
