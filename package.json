@@ -12,7 +12,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node index.js",
+    "dependencias": "yarn add express dotenv hbs mysql2 path"
   },
   "keywords": [],
   "author": "Grupo_7",
