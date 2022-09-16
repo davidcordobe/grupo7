@@ -28,8 +28,8 @@ app.get('/', (req, res) => {
     })
 });
 
-
-let sql = 'SELECT * FROM ipf6voifd90b45u3.foro'
+// let sql = 'SELECT * FROM ipf6voifd90b45u3.foro'  // CONEXION A HEROKU !!!
+let sql = 'SELECT * FROM foro'    // CONEXION LOCAL !!!
 app.get('/formulario', (req, res) => {
     conexion.query(sql, (err, result) => {
         if (err) throw err;
@@ -66,9 +66,10 @@ app.post('/formulario', (req, res) => {
             mensaje: mensaje
         };
 
-        let sql = 'INSERT INTO ipf6voifd90b45u3.foro SET ?';
+        // let sql = 'INSERT INTO ipf6voifd90b45u3.foro SET ?';   CONEXION A HEROKU !!! 
+        let sql = 'INSERT INTO foro SET ?';  // CONEXION LOCAL !!!
 
-        conexion.query(sql, datos, (err, result) => {
+        conexion.query(sql, datos, (err, results) => {
             let envioDatos = 'Datos Enviados Con Éxito'
             if (err) throw err;
             res.render('formulario', {
