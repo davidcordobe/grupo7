@@ -13,12 +13,15 @@
     <textarea class="form-control mb-5" name="mensaje" id="exampleFormControlTextarea1" rows="3"></textarea>
 
     <div class="mb-3 text-center">
-        <input type="submit" class="button btn btn-success w-50 p-2" value="Enviar Datos">
+        <button type="submit" class="button btn btn-success w-50 p-2" id="enviar">Enviar Datos</button>
     </div>
 
     <div class="text-center">
         <h2 class="text-danger">
             {{ validacion }}
+        </h2>
+        <h2>
+            {{ envioDatos}}
         </h2>
 </form>
 
