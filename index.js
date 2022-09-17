@@ -66,7 +66,7 @@ app.post('/formulario', (req, res) => {
             mensaje: mensaje
         };
 
-        let sql = 'INSERT INTO ipf6voifd90b45u3.foro SET ?';   CONEXION A HEROKU !!! 
+        let sql = 'INSERT INTO ipf6voifd90b45u3.foro SET ?';   //CONEXION A HEROKU !!! 
         //let sql = 'INSERT INTO foro SET ?';  // CONEXION LOCAL !!!
 
         conexion.query(sql, datos, (err, results) => {
