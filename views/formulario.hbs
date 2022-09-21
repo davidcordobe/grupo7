@@ -37,16 +37,20 @@
     </div>
     <table class="table table-dark table-hover">
         <thead>
+            <th>ID</th>
             <th>Nombre</th>
             <th>Email</th>
             <th>Mensaje</th>
+            <th>Borrar</th>
         </thead>
         <tbody>
             {{#each results}}
             <tr>
-                <td>{{nombre}}</td>
-                <td>{{email}}</td>
-                <td>{{mensaje}}</td>
+                <td>{{this.id}}</td>
+                <td>{{this.nombre}}</td>
+                <td>{{this.email}}</td>
+                <td>{{this.mensaje}}</td>
+                <td><a href="./formulario/{{ this.id }}" id="borrar" onclick="borrar">Borrar</a></td>
             </tr>
             {{/each}}
         </tbody>
