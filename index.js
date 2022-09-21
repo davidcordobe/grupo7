@@ -57,8 +57,6 @@ app.get('/formulario/:idForo', (req, res) => {
 
 
 
-
-
 app.get('/programa', (req, res) => {
     res.render('programa', {
         titulo: 'Bienvenido al Programa de la UTN'
