@@ -64,3 +64,13 @@ footer {
         justify-content: center;
     }
 }
+
+#borrar{
+    text-decoration: none;
+    color: #F70404;
+    font-size: 15px;
+}
+
+#borrar:hover{
+    color: #854949;
+}
